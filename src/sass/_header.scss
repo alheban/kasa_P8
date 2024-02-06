@@ -1,0 +1,37 @@
+header {
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1240px;
+
+img {
+    width: 210px;
+    height: 68px;
+    color:red
+  }
+nav {
+    ul {
+      display: flex;
+      
+      font-size: 13px;
+      li {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        margin: 5px 0 0 57px;
+
+        a {
+          color: #000;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          &.active {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

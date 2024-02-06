@@ -14,7 +14,7 @@ const Collapse = ({title,content}) => {
         <h2>{title}</h2>
         <img src={arrow}className={ toggle ? 'arrow_down': "arrow_up"}></img>
       </div>
-      <div className="container__description">
+      <div className={toggle ? 'container__description' : 'container__description_hidden'}>
         <p>{content}</p>
       </div>
     </>

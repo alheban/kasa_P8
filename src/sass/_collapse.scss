@@ -25,19 +25,24 @@ section {
         font-style: normal;
         font-weight: 700;
       }
+      .arrow{
+        transition: all 0.2s ease-in-out;
+      }
       .arrow_down {
         transform: rotate(180deg);
       }
       .arrow_up {
         transform: rotate(0deg);
       }
-    }
 
+    }
+   
     &_description {
+      box-sizing: border-box;
       position: relative;
       width: 80%;
       max-width: 1024px;
-      top: -30px;
+      top: -83px;
       z-index: -1;
       font-size: 18px;
       font-style: normal;
@@ -45,8 +50,20 @@ section {
       border-radius: 10px 10px 5px 5px;
       background: rgba(246, 246, 246, 0.45);
       padding: 25px 20px 20px 20px;
+      transition: visibility 0.5s ease-in-out,
+      opacity 0.5s ease-in-out,
+      height 0.5s ease-in-out,
+      transform 0.5s ease-in-out,
+      max-height 300ms;
 
+      // &_up{
+      //   transform: translate(0px, 0px);
+      // }
+      &_down{
+        transform: translate(0px, 45px);
+      }
     }
+
     &_description_hidden {
       visibility: hidden;
       opacity: 0;

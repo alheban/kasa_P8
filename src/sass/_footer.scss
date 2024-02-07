@@ -1,5 +1,4 @@
 footer {
-  margin: 20px auto;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
@@ -13,9 +12,33 @@ footer {
     width: 122px;
   }
   p {
+    margin-top: 28px;
     color: white;
     font-size: 24px;
-
+    font-style: normal;
     font-weight: 500;
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 66px 120px 58px 120px;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+  
+    img {
+      width: 122px;
+    }
+    p {
+      margin-top: 0;
+      padding: 15px 19px 0 19px;
+      font-size: 12px;
+      text-align: center;
+    }
   }
 }

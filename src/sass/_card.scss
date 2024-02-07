@@ -1,6 +1,7 @@
 .cards{
   display: flex;
   justify-content: center;
+  margin:20px 0 20px 0 ;
   
 
   .cardList {
@@ -31,10 +32,9 @@
         z-index: 1;
         padding: 20px;
         position: absolute;
-        height: 70px;
         bottom: 0;
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 700;
         color: white;
       }
 
@@ -54,4 +54,26 @@
     }
 
   }
+}
+
+@media screen and (max-width: 375px) {
+  .cards{
+    margin:20px 0 0 0 ;
+    .cardList {
+      background-color: white;
+      padding: 0;
+      flex-wrap: nowrap;
+      flex-direction: column;
+  
+      .card {
+        margin: 0 20px 20px 20px;
+        height: 255px;
+        width: 335px;  
+
+
+      }
+  
+    }
+  }
+
 }

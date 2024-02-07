@@ -3,9 +3,9 @@ import logoKasa from "./../../assets/kasa_logo_white.svg"
 
 
 export function Footer () {
-    return <footer className="header">
+    return <footer className="footer">
 
-      <img src={logoKasa} alt="logo  Kasa" />
+      <img src={logoKasa} alt="logoKasa" />
 
 <p>© 2020 Kasa. All rights reserved</p>
   </footer>

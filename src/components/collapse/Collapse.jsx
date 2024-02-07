@@ -10,11 +10,11 @@ const Collapse = ({title,content}) => {
   };
 
     return <>
-      <div className="container" onClick={handleToggle}>
+      <div className="collapse_title" onClick={handleToggle}>
         <h2>{title}</h2>
         <img src={arrow}className={ toggle ? 'arrow_down': "arrow_up"}></img>
       </div>
-      <div className={toggle ? 'container__description' : 'container__description_hidden'}>
+      <div className={toggle ? 'collapse_description' : 'collapse_description_hidden'}>
         <p>{content}</p>
       </div>
     </>

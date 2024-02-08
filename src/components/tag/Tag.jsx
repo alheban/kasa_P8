@@ -1,6 +1,6 @@
   const Tag = ({tag})=>{
     return (
-        <button>
+        <button className="tag">
             {tag}
         </button>
       )

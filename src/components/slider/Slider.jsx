@@ -1,7 +1,6 @@
 import { useState } from "react";
 import ArrowLeft from "./../../assets/Slider_arrow_left.svg";
 import ArrowRight from "./../../assets/Slider_arrow_right.svg";
-import defaultPicture from "./../../assets/default_img_carrousel.png";
 
 
 const Slider = ({ pictures, title }) => {
@@ -30,7 +29,7 @@ const Slider = ({ pictures, title }) => {
   return (
     <div className="slider">
       <img 
-          src={pictures.length === 0 ? defaultPicture : pictures[currentIndex]}
+          src={pictures.length === 0 ? pictures[0] : pictures[currentIndex]}
           alt={title}
           className="slider_image"
         />
@@ -46,7 +45,7 @@ const Slider = ({ pictures, title }) => {
         className="slider_arrows slider_arrowRight"
         onClick={() => nextSlide()}
       />
-      <div className="slider_counter">1/4</div>
+      <div className="slider_counter">{currentIndex + 1} / {pictures.length}</div>
     </div>
 
   );

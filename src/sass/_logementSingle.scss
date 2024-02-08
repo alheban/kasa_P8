@@ -1,0 +1,55 @@
+.container_fichelogement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+
+  .logement_title {
+    h1 {
+      color: #ff6060;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 500;
+    }
+    h2 {
+      color: #000;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+    }
+    &_tags {
+      display: block;
+    }
+  }
+
+  .host_info {
+    .host {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+
+      &_name {
+        display: flex;
+        flex-direction: column;
+        color: #ff6060;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+      }
+      &_picture {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        object-fit: contain;
+      }
+      &_star{
+        width: 36px;
+        
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <Banner ombre={'none'} img={"./../src/assets/montagne.jpg"} />
-      <section>
+      <section className="container_collapse">
         {aboutdata.map((data) => {
           return (
             <div className="collapse" key={data.id}>

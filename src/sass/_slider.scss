@@ -1,5 +1,37 @@
-section{
-    img {
-    background-color: red;
-}
+.slider {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    
+  &_image {
+    width: 95%;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 25px;
+
+  }
+
+  &_arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+  }
+
+  &_arrowLeft {
+    left: 4%;
+
+  }
+  &_arrowRight {
+    right: 4%;
+
+
+  }
+  &_counter {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

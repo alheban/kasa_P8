@@ -14,7 +14,7 @@ function LogementSingle() {
   const name = product.host.name.split(" ");
 
   return (
-    <div>
+    <>
       <Slider pictures={product.pictures} />
       <div className="container_fichelogement">
         <div className="logement_title">
@@ -59,7 +59,7 @@ function LogementSingle() {
           />
         </div>
       </section>
-    </div>
+    </>
   );
 }
 

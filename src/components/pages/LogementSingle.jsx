@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import products from "/public/data.json";
 import Collapse from "../collapse/Collapse";
 import Slider from "../slider/Slider";
+import Tag from "../tag/Tag";
 
 function LogementSingle() {
   // Utilisez useParams() pour obtenir les paramètres de l'URL
@@ -12,20 +13,33 @@ function LogementSingle() {
 
   return (
     <div>
-      <h1>Page de logement</h1>
-      <p>Identifiant du logement : {id}</p>
       <Slider pictures={product.pictures} />
+      <div>
+        <h1>{product.title}</h1>
+        <h2>{product.location}</h2>
+        <div>
+          {product.tags.map((tag, index) => (
+            <Tag key={index} tag={tag} />
+          ))}
+        </div>
+        
+      </div>
+
       <section className="collapseLogement">
         <div className="collapse collapseLogement_size">
           <Collapse title={"description"} content={product.description} />
         </div>
         <div className="collapse collapseLogement_size">
-          <Collapse title={"Équipements"} content={
-    <ul>
-      {product.equipments.map((equipment, index) => (
-        <li key={index}>{equipment}</li>
-      ))}
-    </ul>} />
+          <Collapse
+            title={"Équipements"}
+            content={
+              <ul>
+                {product.equipments.map((equipment, index) => (
+                  <li key={index}>{equipment}</li>
+                ))}
+              </ul>
+            }
+          />
         </div>
       </section>
     </div>

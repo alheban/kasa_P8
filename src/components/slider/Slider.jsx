@@ -28,7 +28,6 @@ const Slider = ({ pictures, title }) => {
   };
 
   return (
-    <div className="container_s">
     <div className="slider">
       <img 
           src={pictures.length === 0 ? defaultPicture : pictures[currentIndex]}
@@ -49,7 +48,7 @@ const Slider = ({ pictures, title }) => {
       />
       <div className="slider_counter">1/4</div>
     </div>
-    </div>
+
   );
 };
 

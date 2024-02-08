@@ -6,10 +6,10 @@ const About = () => {
   return (
     <>
       <Banner ombre={'none'} img={"./../src/assets/montagne.jpg"} />
-      <section className="container_collapse">
+      <section className="collapse_about">
         {aboutdata.map((data) => {
           return (
-            <div className="collapse" key={data.id}>
+            <div className=" collapse" key={data.id}>
               <Collapse title={data.title} content={data.content} />
             </div>
           );

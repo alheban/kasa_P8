@@ -20,7 +20,7 @@ export function useFtech (url, options={}){
         }).finally(() => {
             setLoading(false)
         })
-    }, []);
+    }, [url]);
 
     return{
         loading,data,errors

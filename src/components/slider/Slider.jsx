@@ -1,10 +1,19 @@
-import { useState } from "react";
+import { useState,useEffect} from "react";
 import ArrowLeft from "./../../assets/Slider_arrow_left.svg";
 import ArrowRight from "./../../assets/Slider_arrow_right.svg";
 
 
 const Slider = ({ pictures, title }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
+
+  useEffect(() => {
+    // Assurer que currentIndex reste dans les limites lorsque le tableau pictures change
+    if (currentIndex >= pictures.length) {
+      setCurrentIndex(pictures.length - 1);
+    } else if (currentIndex < 0) {
+      setCurrentIndex(0);
+    }
+  }, [currentIndex, pictures.length]);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => {

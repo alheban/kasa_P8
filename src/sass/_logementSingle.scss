@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 95%;
-  margin: auto;
+  margin: 30px auto 0 auto;
   max-width: 1240px;
 
   .logement_title {
@@ -21,16 +21,22 @@
     }
     &_tags {
       display: block;
+      margin-top: 20px;
     }
   }
 
   .host_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .host {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       align-items: center;
       justify-content: flex-end;
+      block-size: auto;
+      
       gap: 10px;
 
       &_name {

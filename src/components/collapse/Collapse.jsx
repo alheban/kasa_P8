@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import arrow from "./../../assets/arrow.png"
 
 const Collapse = ({title,content}) => {

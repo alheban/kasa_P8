@@ -1,5 +1,5 @@
 import { Link} from "react-router-dom";
-import Footer from "../footer/Footer";
+
 
 
 export default function ErrorPage() {

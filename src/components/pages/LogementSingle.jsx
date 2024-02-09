@@ -1,26 +1,21 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-// import products from "/public/data.json";
+import data from "/public/data.json";
 import Collapse from "../collapse/Collapse";
 import Slider from "../slider/Slider";
 import Tag from "../tag/Tag";
 import Rating from "../rating/rating";
-import { useFtech } from "../hooks/useFetch";
 import ErrorPage from "./ErrorPage.jsx";
 
 function LogementSingle() {
   // Utilisez useParams() pour obtenir les paramètres de l'URL
   const { id } = useParams();
-  const { loading, data,errors} = useFtech('/src/data/data.json');
-  if (!data) return ;
+
   // Afficher les données du tableau products dans la console
   const product = data.find((product) => product.id === id);
   const name = product.host.name.split(" ");
 
-  if (loading) {
-    return <p>Loading...</p>;
-  }
-  if (errors) {
+  if (!product) {
     return <ErrorPage/>;
   
   }

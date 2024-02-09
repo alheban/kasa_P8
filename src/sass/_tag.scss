@@ -13,4 +13,8 @@
     -webkit-box-shadow: 0px 0px 3px 0px rgba(92,35,30,0.4); 
     box-shadow: 0px 0px 3px 0px rgba(92,35,30,0.4);
   }
+  @media screen and (max-width: 375px) {
+    font-size: 10px;
+
+  }
 }

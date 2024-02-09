@@ -7,7 +7,7 @@
   @media screen and (max-width: 375px) {
     margin: 19px auto;
     gap: 20px;
-    width: 70%;
+    width: 90%;
   }
 }
 .collapseLogement {
@@ -21,6 +21,15 @@
   width: 582px;
   
  }
+ @media screen and (max-width: 375px) {
+  margin: 0 auto 27px auto;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  &_size{
+    width: 335px;
+   }
+}
 }
 
 

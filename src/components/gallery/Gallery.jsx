@@ -4,7 +4,7 @@ import Card from "../card/Card";
 import { useFtech } from "../hooks/useFetch";
 
 function Gallery() {
-  const { loading, data, errors } = useFtech('/src/data.json');
+  const { loading, data, errors } = useFtech('/src/data/data.json');
   if (!data) return <p>Loading...</p>
   console.log("loading:", loading);
   console.log("data:", data);

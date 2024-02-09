@@ -5,7 +5,7 @@ import { useFtech } from "../hooks/useFetch";
 
 
 const About = () => {
-  const { loading, data, errors } = useFtech("/src/aboutdata.json");
+  const { loading, data, errors } = useFtech("/src/data/aboutdata.json");
   if (!data) return <p>Loading...</p>;
   return (
     <>

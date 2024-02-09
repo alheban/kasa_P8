@@ -3,7 +3,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1240px;
+  max-width: 95%;
   width: 100%;
 
   img {
@@ -26,11 +26,12 @@ header {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   header {
     margin: 20px 20px 27px 20px;
     max-width: 335px;
     height: 46px;
+    width: 100%;
 
     img {
       width: 145px;

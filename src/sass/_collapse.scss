@@ -16,18 +16,17 @@
   gap: 70px;
   margin: 24px auto 50px auto;
   width: 95%;
-  max-width: 1240px;
  &_size{
   width: 582px;
   
  }
- @media screen and (max-width: 375px) {
+ @media screen and (max-width: 425px) {
   margin: 0 auto 27px auto;
   flex-direction: column;
   gap: 20px;
   width: 90%;
   &_size{
-    width: 335px;
+    width: 100%;
    }
 }
 }
@@ -95,7 +94,7 @@
 
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
 .collapse {
       &_title {
         height: 30px;

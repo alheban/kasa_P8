@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect} from "react";
+
 
 export function useFtech (url, options={}){
     const [loading, setLoading] = useState(true)

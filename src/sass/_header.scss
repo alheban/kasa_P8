@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 header {
   margin: 45px auto 50px auto;
   display: flex;
@@ -15,7 +17,7 @@ header {
     display: flex;
     a {
       margin: 0 0 0 57px;
-      color: #000;
+      color: $color-quaternary;
       font-size: 24px;
       font-style: normal;
       font-weight: 500;
@@ -26,7 +28,7 @@ header {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: $mobile-max-width) {
   header {
     margin: 20px auto 27px auto;
     height: 46px;

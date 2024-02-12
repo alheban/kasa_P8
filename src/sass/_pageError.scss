@@ -1,17 +1,19 @@
+@import 'variables.scss';
+
 .error-page {
     display: flex;
     flex-direction: column;
     align-items: center;
     h1 {
     margin: 139px auto 139px auto;
-    color: #FF6060;
+    color: $color-primary;
     text-align: center;
     font-size: 288px;
     font-style: normal;
     font-weight: 700;
     }
     p{
-        color: #FF6060;
+        color: $color-primary;
         font-size: 36px;
         font-style: normal;
         font-weight: 500;
@@ -19,7 +21,7 @@
         text-align: center;
     }
     a{
-    color: #000;
+    color: $color-quaternary;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -29,7 +31,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: $mobile-max-width) {
     .error-page {
         display: flex;
         flex-direction: column;

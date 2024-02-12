@@ -15,10 +15,10 @@ function LogementSingle() {
   const product = data.find((product) => product.id === id);
   const name = product.host.name.split(" ");
 
-  if (!product) {
-    return <ErrorPage/>;
+  // if (!product) {
+  //   return <ErrorPage/>;
   
-  }
+  // }
 
   return (
     <>

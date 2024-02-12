@@ -1,3 +1,4 @@
+@import 'variables.scss';
 .banner {
   margin: 0 auto 0 auto;
   max-width: 90%;
@@ -5,11 +6,11 @@
   height: 223px;
   border-radius: 25px;
   box-shadow: 0px 5px 15px rgb(71, 62, 61);
-  color: white;
+  color: $color-tertiary;
   background-size: cover;
   background-position: center 30%;
   align-items: center;
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: $mobile-max-width) {
       box-shadow: none;
       margin: 0 auto 22px auto;
       height: 111px;
@@ -25,15 +26,15 @@
       font-size: 48px;
       font-style: normal;
       font-weight: 700;
-      @media screen and (max-width:768px) {
+      @media screen and (max-width: $tablet-max-width) {
         font-size: 34px;
         margin: 16px;
       }
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: $mobile-max-width) {
         font-size: 24px;
         margin: 16px;
       }
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: $mobile-min-width) {
         font-size: 18px;
         margin: 16px;
       }

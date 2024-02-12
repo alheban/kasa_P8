@@ -1,24 +1,32 @@
-import React from "react";
+
 import { useParams } from "react-router-dom";
-import data from "/public/data.json";
+// import data from "/public/data.json";
 import Collapse from "../collapse/Collapse";
 import Slider from "../slider/Slider";
 import Tag from "../tag/Tag";
 import Rating from "../rating/rating";
 import ErrorPage from "./ErrorPage.jsx";
 
+import {React,  useContext } from 'react';
+import { DataContext } from '../hooks/useContext.jsx';
+
 function LogementSingle() {
   // Utilisez useParams() pour obtenir les paramètres de l'URL
   const { id } = useParams();
 
+  // Accédez au contexte de données
+  const { dataLogement } = useContext(DataContext);
+
+
   // Afficher les données du tableau products dans la console
-  const product = data.find((product) => product.id === id);
+  const product = dataLogement.find((product) => product.id === id);
+
   const name = product.host.name.split(" ");
 
-  // if (!product) {
-  //   return <ErrorPage/>;
+  if (!product) {
+    return <ErrorPage/>;
   
-  // }
+  }
 
   return (
     <>

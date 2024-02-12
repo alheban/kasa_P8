@@ -1,10 +1,13 @@
-import React from "react";
-import data from "/public/data.json";
+import {React,  useContext } from 'react';
+// import data from "/public/data.json";
 import Card from "../card/Card";
+import { DataContext } from '../hooks/useContext.jsx';
 
 
 function Gallery() {  
-  const listItems = data.map(({id,cover,title}) => (
+  const { dataLogement } = useContext(DataContext);
+
+  const listItems = dataLogement.map(({id,cover,title}) => (
     <Card  
     key={id} 
     cover={cover}

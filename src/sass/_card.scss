@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   margin:20px 0 20px 0 ;
+
   
 
   .cardList {
@@ -9,10 +10,18 @@
     border-radius: 15px;
     padding: 20px;
     box-sizing: border-box;
-    width: 1240px;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
+    gap: 2%;
+    @media screen and (max-width: 425px) {
+      background-color: white;
+      padding: 0;
+      
+
+
+    }
 
     .card {
       margin: 30px;
@@ -22,6 +31,24 @@
       width: 340px;
       border-radius: 10px;
       cursor: pointer;
+      @media screen and (max-width:768px) {
+        width: 259px;
+        height: 255px;
+        margin: 20px;
+
+      }
+      @media screen and (max-width: 425px) {
+        width: 335px;
+        height: 255px;
+        margin: 10px;
+
+      }
+      @media screen and (max-width: 320px) {
+        width: 260px;
+height: 225px;
+margin: 10px;
+
+      }
 
       img {
         height: 100%;
@@ -56,24 +83,25 @@
   }
 }
 
-@media screen and (max-width: 375px) {
-  .cards{
-    margin:20px 0 0 0 ;
-    .cardList {
-      background-color: white;
-      padding: 0;
-      flex-wrap: nowrap;
-      flex-direction: column;
+// @media screen and (max-width: 425px) {
+//   .cards{
+//     margin:20px 0 0 0 ;
+//     .cardList {
+//       background-color: white;
+//       padding: 0;
+//       flex-wrap: nowrap;
+//       flex-direction: column;
   
-      .card {
-        margin: 0 20px 20px 20px;
-        height: 255px;
-        width: 335px;  
+//       .card {
+//         margin: 0 20px 20px 20px;
+//         height: 255px;
+//         width: 335px;  
+//         border-radius: 10px;
 
 
-      }
+//       }
   
-    }
-  }
+//     }
+//   }
 
-}
+// }

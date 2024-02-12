@@ -3,8 +3,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    width: 70%;
-  @media screen and (max-width: 375px) {
+    width: 80%;
+    max-width: 1605px;
+  @media screen and (max-width: 425px) {
     margin: 19px auto;
     gap: 20px;
     width: 90%;
@@ -15,9 +16,9 @@
   justify-content: space-between;
   gap: 70px;
   margin: 24px auto 50px auto;
-  width: 95%;
+  width: 90%;
  &_size{
-  width: 582px;
+  width: 80%;
   
  }
  @media screen and (max-width: 425px) {

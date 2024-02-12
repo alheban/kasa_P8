@@ -2,7 +2,7 @@
     display: flex;
     position: relative;
     justify-content: center;
-    max-width: 95%;
+    max-width: 90%;
     width: 100%;
     margin: auto;
     
@@ -47,9 +47,9 @@ font-weight: 500;
 
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .slider {
-    width: 335px;
+    width: 95%;
 
     
   &_image {

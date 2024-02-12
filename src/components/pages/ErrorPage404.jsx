@@ -4,7 +4,7 @@ import Footer from "../footer/Footer";
 
 
 export default function ErrorPage() {
- {/*const error = useRouteError();*/}
+const error = useRouteError();
 
   return (
     <div className="error-page">

@@ -10,7 +10,7 @@ export const DataProvider = ({ children }) => {
           id,
           title,
           cover,
-          pictures,
+          pictures: pictures || [],
           location,
           tags,
           rating,

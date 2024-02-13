@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Card = ({ title, cover, id }) => {
+const Card = React.memo(({ title, cover, id }) => {
   return (
     <Link to={`/logement/${id}`} key={id}>
       <li key={id} className="card">
@@ -10,6 +10,6 @@ const Card = ({ title, cover, id }) => {
       </li>
     </Link>
   );
-};
+});
 
 export default Card;

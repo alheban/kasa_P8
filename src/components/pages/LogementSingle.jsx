@@ -18,25 +18,27 @@ function LogementSingle() {
   const { dataLogement } = useContext(DataContext);
 
 
-  // Afficher les données du tableau products dans la console
+// Rechercher le produit correspondant à l'ID
   const product = dataLogement.find((product) => product.id === id);
-
-  const name = product.host.name.split(" ");
 
   if (!product) {
     return <ErrorPage/>;
   
   }
 
+// Destructuration des propriétés du produit
+  const { pictures, title, location, tags, host, rating, description, equipments } = product;
+  const name = host.name.split(' ');
+
   return (
     <>
-      <Slider pictures={product.pictures} />
+      <Slider pictures={pictures} title={title}/>
       <div className="container_fichelogement">
         <div className="logement_title">
-          <h1>{product.title}</h1>
-          <h2>{product.location}</h2>
+          <h1>{title}</h1>
+          <h2>{location}</h2>
           <div className="logement_title_tags">
-            {product.tags.map((tag, index) => (
+            {tags.map((tag, index) => (
               <Tag key={index} tag={tag} />
             ))}
           </div>
@@ -49,24 +51,24 @@ function LogementSingle() {
             </div>
             <img
               className="host_picture"
-              src={product.host.picture}
+              src={host.picture}
               alt="Hôte de cet hébergement"
             />
           </div>
-          <Rating rating={product.rating} />
+          <Rating rating={rating} />
         </div>
       </div>
 
       <section className="collapseLogement">
         <div className="collapse collapseLogement_size">
-          <Collapse title={"description"} content={product.description} />
+          <Collapse title={"description"} content={description} />
         </div>
         <div className="collapse collapseLogement_size">
           <Collapse
             title={"Équipements"}
             content={
               <ul>
-                {product.equipments.map((equipment, index) => (
+                {equipments.map((equipment, index) => (
                   <li key={index}>{equipment}</li>
                 ))}
               </ul>

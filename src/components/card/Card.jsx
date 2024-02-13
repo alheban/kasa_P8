@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 
 const Card = React.memo(({ title, cover, id }) => {
   return (
+    <li>
     <Link to={`/logement/${id}`} key={id}>
-      <li key={id} className="card">
+      <div key={id} className="card">
         <img src={cover} alt={title} />
         <h2>{title}</h2>
-      </li>
+      </div>
     </Link>
+    </li>
   );
 });
 

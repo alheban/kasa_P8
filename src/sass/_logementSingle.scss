@@ -7,7 +7,6 @@
   width: 90%;
   margin: 30px auto 0 auto;
   @media screen and (max-width: $mobile-max-width)  {
-    width: 90%;
     margin: 10px auto 0 auto;
     flex-direction: column;
   }
@@ -15,8 +14,6 @@
   .logement_title {
     h1 {
       color:$color-primary;
-      
-      font-style: normal;
       font-weight: 500;
       @media screen and (max-width: $mobile-max-width) {
         font-size: 18px;
@@ -25,7 +22,6 @@
     h2 {
       color: #000;
       font-size: 18px;
-      font-style: normal;
       font-weight: 500;
       @media screen and (max-width: $mobile-max-width) {
         font-size: 14px;

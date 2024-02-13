@@ -12,7 +12,8 @@ function Gallery() {
     key={id} 
     cover={cover}
     id={id}
-    title={title}>
+    title={title}
+    alt={title}>
     </Card> 
 
   ));

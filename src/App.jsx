@@ -9,12 +9,12 @@ import LogementSingle from "./components/pages/LogementSingle.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/kasa_P8/",
     element: <Layout/>,
     errorElement: <ErrorPage404 />,
     children: [
       {
-        index: "/",
+        index: "/kasa_P8/",
         element: <Home />
       },
       {

@@ -13,7 +13,7 @@ const About = () => {
 
   return (
     <>
-      <Banner ombre={"none"} img={"/kasa_P8/src/assets/montagne.jpg"} title={null}/>
+      <Banner ombre={"none"} img={"./../src/assets/montagne.jpg"} title={null}/>
       <section className="collapse_about">
         {dataApropos.map((data) => {
           return (

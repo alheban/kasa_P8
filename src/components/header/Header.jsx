@@ -10,10 +10,10 @@ export function Header () {
     <nav>
       <ul>
         <li>
-          <NavLink to="/kasa_P8/">Accueil</NavLink>
+          <NavLink to="/">Accueil</NavLink>
         </li>
         <li>
-          <NavLink to="/kasa_P8/about">A Propos</NavLink>
+          <NavLink to="about">A Propos</NavLink>
         </li>
       </ul>
     </nav>

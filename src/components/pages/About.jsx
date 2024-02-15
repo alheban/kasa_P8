@@ -1,6 +1,6 @@
 import {React,  useContext } from 'react';
 import { DataContext } from '../hooks/useContext.jsx';
-
+import montagne from "./../../assets/montagne.jpg"
 
 import Banner from "../banner/Banner";
 // import data from "/public/aboutdata.json";
@@ -13,7 +13,7 @@ const About = () => {
 
   return (
     <>
-      <Banner ombre={"none"} img={"./../src/assets/montagne.jpg"} title={null}/>
+      <Banner ombre={"none"} img={montagne} title={null}/>
       <section className="collapse_about">
         {dataApropos.map((data) => {
           return (

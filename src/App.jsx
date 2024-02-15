@@ -7,6 +7,8 @@ import Home from "./components/pages/Home.jsx";
 import Layout from "./components/pages/Layout.jsx";
 import LogementSingle from "./components/pages/LogementSingle.jsx";
 
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,7 +33,7 @@ const router = createBrowserRouter([
         element: <ErrorPage />
       },
     ],
-  },
+  },,
 ]);
 
 

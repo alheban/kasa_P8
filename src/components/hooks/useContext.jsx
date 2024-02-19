@@ -9,8 +9,8 @@ export const DataProvider = ({ children }) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const dataResponse = await import('/public/data.json');
-                const aboutResponse = await import('/public/aboutdata.json');
+                const dataResponse = await import('./../../data/data.json');
+                const aboutResponse = await import('./../../data/aboutdata.json');
 
                 // Assuming your data is structured as an array
                 const formattedData = dataResponse.default.map(({ id, title, cover, pictures, location, tags, rating, host, description, equipments }) => ({

@@ -3,7 +3,6 @@ import { DataContext } from '../hooks/useContext.jsx';
 import montagne from "./../../assets/montagne.jpg"
 
 import Banner from "../banner/Banner";
-// import data from "/public/aboutdata.json";
 import Collapse from "../collapse/Collapse";
 
 

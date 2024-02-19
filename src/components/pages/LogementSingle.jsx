@@ -1,6 +1,5 @@
 
 import { useParams } from "react-router-dom";
-// import data from "/public/data.json";
 import Collapse from "../collapse/Collapse";
 import Slider from "../slider/Slider";
 import Tag from "../tag/Tag";

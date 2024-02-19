@@ -1,5 +1,4 @@
 import React,{useContext } from 'react';
-// import data from "/public/data.json";
 import Card from "../card/Card";
 import { DataContext } from '../hooks/useContext.jsx';
 

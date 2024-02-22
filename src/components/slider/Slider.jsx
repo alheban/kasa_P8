@@ -34,29 +34,34 @@ const Slider = ({ pictures, title }) => {
       }
     });
   };
-
+  
   return (
     <div className="slider">
-      <img 
-          src={pictures.length === 0 ? pictures[0] : pictures[currentIndex]}
-          alt={title}
-          className="slider_image"
-        />
+      {pictures.length > 1 && (
+        <>
+          <img
+            src={ArrowLeft}
+            alt="flèche gauche"
+            className="slider_arrows slider_arrowLeft"
+            onClick={prevSlide}
+          />
+          <img
+            src={ArrowRight}
+            alt="flèche droite"
+            className="slider_arrows slider_arrowRight"
+            onClick={nextSlide}
+          />
+          <div className="slider_counter">
+            {currentIndex + 1} / {pictures.length}
+          </div>
+        </>
+      )}
       <img
-        src={ArrowLeft}
-        alt="flèche gauche"
-        className="slider_arrows slider_arrowLeft"
-        onClick={() => prevSlide()}
+        src={pictures.length === 0 ? pictures[0] : pictures[currentIndex]}
+        alt={title}
+        className="slider_image"
       />
-      <img
-        src={ArrowRight}
-        alt="flèche gauche"
-        className="slider_arrows slider_arrowRight"
-        onClick={() => nextSlide()}
-      />
-      <div className="slider_counter">{currentIndex + 1} / {pictures.length}</div>
     </div>
-
   );
 };
 
